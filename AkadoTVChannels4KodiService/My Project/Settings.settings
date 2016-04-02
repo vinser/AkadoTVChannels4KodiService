@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="channelsListURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://wintray.akado-ural.ru/wintray.php?action=media</Value>
+    </Setting>
+    <Setting Name="epgURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://wintray.akado-ural.ru/misc/telecast.xml</Value>
+    </Setting>
+    <Setting Name="tvListSavePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Program Files (x86)\Kodi\AkadoIPTV\akadoIPTVChannels.m3u</Value>
+    </Setting>
+    <Setting Name="tvEpgSavePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Program Files (x86)\Kodi\AkadoIPTV\akadoIPTVEPG.xml</Value>
+    </Setting>
+    <Setting Name="tvEpgShift" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="pollTimerMinutes" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="agingTimeMinutes" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1400</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
