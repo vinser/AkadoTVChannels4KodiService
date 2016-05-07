@@ -99,28 +99,31 @@ Namespace My
             End Get
         End Property
         
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("60")>  _
-        Public Property pollTimerMinutes() As Integer
+        Public ReadOnly Property pollTimerMinutes() As Integer
             Get
                 Return CType(Me("pollTimerMinutes"),Integer)
             End Get
-            Set
-                Me("pollTimerMinutes") = value
-            End Set
         End Property
         
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("1400")>  _
-        Public Property agingTimeMinutes() As Integer
+        Public ReadOnly Property agingTimeMinutes() As Integer
             Get
                 Return CType(Me("agingTimeMinutes"),Integer)
             End Get
-            Set
-                Me("agingTimeMinutes") = value
-            End Set
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+        Public ReadOnly Property altURI() As Boolean
+            Get
+                Return CType(Me("altURI"),Boolean)
+            End Get
         End Property
     End Class
 End Namespace

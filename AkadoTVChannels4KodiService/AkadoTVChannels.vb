@@ -145,7 +145,11 @@ Public Class AkadoTVChannels
                         " tvg-name=" & """" & Replace(Replace(s.@title, "[TV] ", ""), " ", "_") & """" &
                         " tvg-logo=" & """" & s.@id & ".png""" &
                         ", " & Replace(s.@title, "[TV] ", "") & Environment.NewLine)
-                AddText(fs, s.@uri & Environment.NewLine)
+                If My.Settings.altURI Then
+                    AddText(fs, s.@alt & Environment.NewLine)
+                Else
+                    AddText(fs, s.@uri & Environment.NewLine)
+                End If
             Next
         Catch ex As Exception
             fs.Close()

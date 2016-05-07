@@ -17,11 +17,14 @@
     <Setting Name="tvEpgShift" Type="System.String" Scope="Application">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="pollTimerMinutes" Type="System.Int32" Scope="User">
+    <Setting Name="pollTimerMinutes" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">60</Value>
     </Setting>
-    <Setting Name="agingTimeMinutes" Type="System.Int32" Scope="User">
+    <Setting Name="agingTimeMinutes" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">1400</Value>
+    </Setting>
+    <Setting Name="altURI" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>
